@@ -1,66 +1,88 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
-
-<head> <!-- cabeçalho da página-->
+<head>
     <meta charset="UTF-8">
-   
-    <title>Nome da Página</title> <!-- h1, h3, h3, h3, h4 indica o tamanho da letra -->
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome da Página</title>
+    <link rel="stylesheet" href="style.css">
+    
     <style>
+        /* Centralizando os estilos visuais aqui (CSS) */
         body {
-            background-color: #F2E6E6; /* Substitua aqui pela cor que desejar */
+            background-color: Turquoise;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .header-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .titulo-pagina {
+            color: #000000;
+            margin-bottom: 10px;
+        }
+        .autor {
+            text-align: right;
+            font-size: 0.83em;
+            font-weight: bold;
+        }
+        .titulo-secao {
+            text-align: left;
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+        .texto-conteudo {
+            text-align: justify;
+            font-size: 1em;
+            line-height: 1.5;
+        }
+        .destaque-programacao {
+            font-size: 22px;
+            color: #008080;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(0,0,0,0.1);
         }
     </style>
+</head>
+<body>
 
-    <link rel="stylesheet" href="style.css">
-   
-    <h1 align="center"><font color="#000000">NOME DA PÁGINA</font></h1>
+    <header class="header-container">
+        <h1 class="titulo-pagina">NOME DA PÁGINA</h1>
+        <img src="https://user-images.githubusercontent.com/107090581/194202236-1b58b4d6-7d91-435f-967d-71915582a0ca.png" width="40" height="40" alt="Logotipo">
+    </header>
 
-    <img src="https://user-images.githubusercontent.com/107090581/194202236-1b58b4d6-7d91-435f-967d-71915582a0ca.png&quot;
-         width="40px" height="40px" alt="Logotipo">
-</head> <!-- fim do cabeçalhoi -->
+    <p class="autor">Rafael e Pierre</p>
 
-<body bgcolor="white"> <!-- corpo  da página -->
-
-    <h5 align="right">Rafael e Pierre</h5>
-
-    <h2 align="left"><b>conteúdo do dia</b></h2> <!-- título do contúdo -->
-   
-    <h4 align="justify">
-        <p> <!-- indica parágrafo -->
+    <main>
+        <h2 class="titulo-secao">conteúdo do dia</h2>
+        <p class="texto-conteudo">
             Promover empoderamento das capacidades intelectuais através da
-            <strong><b style="font-size:22px"><font color="#008080">programação</font></b></strong> <!-- indica o tamanho
-            da letra, fonte e cor, geralmente usado para destacar o texto -->
+            <span class="destaque-programacao">programação</span> 
             e proporcionar desenvolvimento nas habilidades tecnológicas...
         </p>
-    </h4>
 
-    <h2 align="left"><b>explicação do conteúdo e/ou fonte da pesquisa</b></h2>
-    <h4 align="justify">
-        <p>Ampliar o atendimento educacional com cursos da plataforma alura.</p>
-    </h4>
+        <h2 class="titulo-secao">explicação do conteúdo e/ou fonte da pesquisa</h2>
+        <p class="texto-conteudo">Ampliar o atendimento educacional com cursos da plataforma alura.</p>
 
-    <h2 align="left"><b> colocar informações do conteúdo</b></h2>
-    <h4 align="justify">
-        <p>Trabalhamos com adolescentes, acadêmicos e profissionais...</p>
-    </h4>
+        <h2 class="titulo-secao">colocar informações do conteúdo</h2>
+        <p class="texto-conteudo">Trabalhamos com adolescentes, acadêmicos e profissionais...</p>
 
-    <h2 align="left"><b>informações do conteúdo</b></h2>
-    <h4 align="justify">
-        <p>Preparamos estudantes para atingir seu potencial educacional e tecnológico.</p>
-    </h4>
+        <h2 class="titulo-secao">informações do conteúdo</h2>
+        <p class="texto-conteudo">Preparamos estudantes para atingir seu potencial educacional e tecnológico.</p>
 
-    <h2 align="left"><b>informações do conteúdo</b></h2>
-    <h4 align="justify">
-        <p>Cursos de programação.</p>
-    </h4>
+        <h2 class="titulo-secao">informações do conteúdo</h2>
+        <p class="texto-conteudo">Cursos de programação.</p>
+    </main>
 
-    <footer align="center"> <!-- rodapé da página -->
-        <h5>colocar informações no rodapé... fonte, atualização....</h5>
-       
-        <p><a href="https://www.instagram.com/seu-perfil">Acesse nossas redes sociais</a></p> <!-- usado para endereços em redes sociais -->
-    </footer> <!-- fecha rodapé -->
+    <footer>
+        <p>colocar informações no rodapé... fonte, atualização....</p>
+        <p><a href="https://www.instagram.com/seu-perfil" target="_blank">Acesse nossas redes sociais</a></p>
+    </footer>
 
-</body> <!-- fecha corpo da página -->
-</html> <!-- fecha página -->
+</body>
+</html>
